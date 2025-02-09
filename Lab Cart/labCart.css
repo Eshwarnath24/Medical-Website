@@ -1,0 +1,134 @@
+.main-page {
+    display: flex;
+    justify-content: center;
+}
+@media (max-width: 900px) {
+    .main-page-grid {
+        grid-template-columns: 1fr !important;
+        padding: 0 50px;
+        max-width: 700px ;
+        row-gap: 20px ;
+    }
+
+    .cart-right {
+        grid-row: 1;
+    }
+}
+.main-page-grid {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: rgb(248, 248, 248);
+    column-gap: 15px;
+    margin-top: 50px;
+    min-width: 1000px;
+}
+.cart-right {
+    min-width: 350px;
+}
+.left-cart {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 15px;
+}
+.cart-items {
+    border: 1.5px solid black;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    border-radius: 10px;
+    padding: 15px 30px 15px 18px;
+    background-color: white;
+}
+.carted-item-img {
+    height: 120px;
+}
+.test-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+    width: 100%;
+}
+.test-name-and-delete {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 50px;
+}
+.delete-img {
+    height: 30px;
+    cursor: pointer;
+}
+.test-name-and-delete p ,
+.main-name-of-test {
+    font-size: 20px;
+    color: rgb(65, 65, 65);
+    font-family: 'Roboto';
+    font-weight: 500;
+}
+.main-name-of-test {
+    font-size: 17px;
+}
+.test-price {
+    font-family: 'Tilt Neon';
+    font-size: 24px;
+    font-weight: bold;
+    color: green;
+}
+.test-price span {
+    color: brown;
+}
+.cart-sum-main-card {
+    border: 1px solid black;
+    padding: 5px 15px;
+    border-radius: 15px;
+    font-family: 'Roboto';
+    background-color: white;
+}
+.cart-order-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.order-total {
+    color: green;
+    font-size: 24px;
+}
+.no-of-tests ,
+.add-tax {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+    font-size: 17px;
+}
+.add-tax {
+    padding-bottom: 8px;
+    border-bottom: 1px dotted rgb(190, 190, 190);
+}
+.make-total {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+    font-size: 21px;
+    color: rgb(171, 0, 0);
+    font-weight: bold;
+}
+.place-lab-test-but {
+    background-color: rgb(128, 255, 128);
+    padding: 15px 45px;
+    font-size: 20px;
+    color: white;
+    border: 1px solid transparent;
+    margin: 0 10px 15px 10px;
+    border-radius: 10px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.no-test {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Tilt Neon';
+    color: rgb(140, 0, 255);
+}
