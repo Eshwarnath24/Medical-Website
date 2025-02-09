@@ -1,0 +1,217 @@
+.doctor-total-data {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    column-gap: 22px;
+}
+.doctor-img {
+    height: 400px;
+    width: 400px;
+}
+.doctor-img img {
+    width: 100%;
+    width: 100%;
+}
+.doctor-info {
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    font-family: 'Roboto';
+}
+.doctor-info .doctor-name {
+    font-size: 42px;
+    color: rgb(255, 170, 0);
+}
+.doctor-price ,
+.doctor-lang ,
+.doctor-special {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    font-size: 20px;
+}
+.doctor-price p ,
+.doctor-lang p ,
+.doctor-special p {
+    font-weight: 500;
+}
+.price-doc ,
+.lang-doc ,
+.special-doc {
+    color: green;
+}
+.doctor-exp {
+    font-size: 18px;
+    color: green;
+}
+.doctor-exp span {
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: brown;
+}
+.doctor-data {
+    display: flex;
+    align-items: center;
+    margin-left: 200px;
+}
+
+
+
+
+.head-main-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    column-gap: 50px;
+    align-items: center;
+    background-color: white;
+}
+.head-main-page img {
+    height: 100px;
+}
+.head-main-page h1 {
+    font-size: 45px;
+    font-family: 'Montserrat ital';
+}
+.form-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin-top: 50px;
+}
+
+form {
+    font-family: 'Roboto';
+    border: 2px solid transparent;
+    padding: 20px 30px;
+    border-radius: 20px;
+    transition: 0.6s ease-out;
+}
+
+.patient-name ,
+.date-of-birth ,
+.phone-number ,
+.email ,
+.food-enqurie { 
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin: 20px 0;
+}
+.patient-name p ,
+.date-of-birth p ,
+.phone-number p ,
+.email p ,
+.height p ,
+.weight p {
+    font-size: 22px;
+    font-weight: bold;
+}
+.patient-name p span ,
+.date-of-birth p span ,
+.phone-number p span ,
+.email p span ,
+.height p span ,
+.weight p span ,
+.food-enqurie p span {
+    color: red;
+}
+.input-names {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.input-names input ,
+.input-dob input ,
+.input-number input ,
+.input-email input ,
+.height input ,
+.weight input {
+    height: 40px;
+    font-size: 17px;
+    outline: none;
+    border-radius: 8px;
+    border: 2px solid black;
+    padding: 0 12px;
+}
+.input-dob input {
+    text-transform: uppercase;
+    min-width: 180px;
+    font-family: 'Montserrat ital';
+}
+.height-weight {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+.height p ,
+.weight p {
+    font-size: 20px;
+}
+.food-enqurie p {
+    font-size: 18px;
+    font-weight: 500;
+}
+.food-enqurie {
+    margin: 30px 0;
+}
+.yes-no {
+    display: flex;
+    column-gap: 15px;
+    margin-top: 0;
+    margin-left: 20px;
+    font-size: 17px;
+}
+.height ,
+.weight {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.submit-container {
+    display: flex;
+    justify-content: end;
+}
+.submit-form {
+    border: 2px solid rgb(122, 246, 122);
+    background-color: white;
+    color: rgb(0, 255, 0);
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+.submit-form:hover {
+    border: 2px solid transparent;
+    background-color: rgb(0, 255, 0);
+    color: white;
+}
+.submit-form:active {
+    border: 2px solid rgb(122, 246, 122);
+    background-color: white;
+    color: rgb(0, 255, 0);
+}
+
+form:focus-within {
+    padding: 50px;
+    border: 2px solid wheat;
+    box-shadow: 0 0 100px wheat;
+}
+.input-yes , 
+.input-no {
+    height: 18px;  
+    width: 18px;  
+}
+.yes , 
+.no {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    margin-right: 50px;
+}
