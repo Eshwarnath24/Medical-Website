@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.headder {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px 5px 10px;
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px solid rgb(230, 230, 230);
+}
+
+body {
+    background-color: rgba(208, 237, 251, 0.567);
+}
+
+.middle {
+    display: flex;
+    align-items: center;
+    min-width: 400px;
+    column-gap: 15px;
+}
+.middle a {
+    text-decoration: none;
+}
+
+.right {
+    display: flex;
+    column-gap: 8px;
+}
+.app-logo {
+    height: 80px;
+    cursor: pointer;
+}
+
+.home ,
+.portfolio ,
+.about-us ,
+.contact-us-headder {
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: 0;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.home {
+    position: relative;
+}
+
+.home .tooltip ,
+.portfolio .tooltip,
+.about-us .tooltip,
+.contact-us-headder .tooltip {
+    position: absolute;
+    bottom: -30px;
+    background-color: gray;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+
+.home:hover .tooltip ,
+.portfolio:hover .tooltip,
+.about-us:hover .tooltip,
+.contact-us-headder:hover .tooltip {
+    opacity: 1;
+}
+
+.home:hover ,
+.portfolio:hover ,
+.about-us:hover ,
+.contact-us-headder:hover {
+    background-color: rgb(237, 237, 237);
+}
+
+.right button {
+    padding: 12px 25px;
+    border-radius: 60px;
+    width: 120px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: white;
+}
+.right div a {
+    text-decoration: none;
+    background-color: white;
+}
+.right div a button:hover {
+    background-color: rgb(240, 240, 240);
+}
+.contacts-us {
+    height: 350px;
+    background-color: black;
+    color: white;
+    padding: 8px 15px;
+}
+
+.contacts-us h1 {
+    font-size: 26px;
+}
+
+.contacts-us-info {
+    display: flex;
+    padding: 0 30px;
+    justify-content: space-evenly;
+}
+
+.insta2 {
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.insta3 {
+    margin: -15px 0 0 20px;
+    height: 8px;
+}
+.insta4 {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin-top: 8px;
+}
+
+.social-media-imgs a {
+    border: 1px solid white;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+}
+.social-media-imgs {
+    display: flex;
+    flex-direction: row;
+    column-gap: 12px;
+}
+.follow-us h1 {
+    margin: 15px 0;
+}
+
+.social-media-imgs a:hover {
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+}
+.insta2:hover ,
+.insta4:hover{
+    background-color: black;
+    color: white;
+}
+
+.youtube1 {
+    border: 1px solid white;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    padding: 3px 8px;
+    text-align: center;
+}
+
+.youtube1:hover {
+    border: 1px solid black;
+    color: white;
+    background-color: black;
+}
+
+.side-con-info {
+    display: flex;
+    column-gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-con-info div {
+    height: 250px;
+}
+.con-hyper-links a ,
+.contacts-number div a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+.con-hyper-links {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    margin-top: 20px;
+    align-items: left;
+}
+.con-card h1 {
+    color: rgb(196, 195, 195 , 0.6);
+}
+.con-hyper-links a:hover ,
+.contacts-number div a:hover {
+    color: rgb(196, 195, 195 , 0.6);
+}
+.contacts-number {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    column-gap: 15px;
+}
+.contacts-number div h1 {
+    margin-bottom: 12px;
+}

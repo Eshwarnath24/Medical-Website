@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+}
+body {
+    padding-top: 80px;
+    min-width: 800px;
+}
+
+.page {
+    padding: 20px 0 50px 0;
+}
+
+.phone-model {
+    padding: 10px; 
+    border: 1px solid black;
+    width: 290px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-quote{
+    font-family: "Playwrite CU", cursive;
+    font-size: 40px;
+    color: #fc5f5f ;
+    width: 800px;
+    margin: 50px 0 0 30px;
+}
+.main-quote-logo{
+    width: 700px;
+    margin: 0 0 0 300px;
+}
+.quote-symbol{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgba(0, 0, 0, 0.288);
+}
+
+.part1{
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    padding: 0 50px;
+}
+.part2 {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.part2-main-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+.mini-card-2 {
+    width: 200px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1.2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.part2-img {
+    height: 100%;
+    width: 100%;
+}
+.part2-img-card {
+    height: 70px;
+    width: 70px;
+    padding: 15px;
+    border: 1.5px solid black;
+    border-radius: 50%;
+    background-color: rgb(197, 252, 197);
+}
+.mini-card-2{
+    background-color: rgba(225, 255, 225, 0.785);
+}
+.mini-card-2 h2 {
+    font-size: 18px;
+    height: 30px;
+}
+.mini-card-2 p {
+    font-size: 14px;
+    height: 100px;
+}
+
+.pad1 {
+    margin-bottom: 100px;
+    transition: box-shadow 1s ease;
+    transition: margin-bottom 0.7s ease-in-out;
+}
+.pad2 {
+    transition: box-shadow 1s ease;
+    transition: height 0.5s ease-in-out;
+}
+
+.pad3 {
+    margin-top: 100px;
+    transition: box-shadow 1s ease;
+    transition: margin-top 0.7s ease-in-out;
+}
+
+.pad1:hover {
+    margin: 0 15px 150px 15px;
+    height: 350px;
+    padding: 20px;
+    box-shadow: 0 0 30px rgb(135, 216, 243);
+    transition: box-shadow 0.5s ease;
+}
+.pad3:hover {
+    margin: 150px 15px 0 15px;
+    height: 350px;
+    padding: 20px;
+    box-shadow: 0 0 30px rgb(135, 216, 243);
+    transition: box-shadow 0.5s ease;
+}
+.pad2:hover {
+    height: 350px;
+    padding: 20px;
+    box-shadow: 0 0 30px rgb(135, 216, 243);
+    transition: box-shadow 0.5s ease; 
+    margin: 0 15px;  
+}
+.part2 {
+    height: 600px;
+}
+
+
+.part3 {
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    padding: 0 50px;
+}
+
+
+.part3-middle-list {
+    list-style-type: none; /* Remove default bullet points */
+    margin-left: 12px;
+}
+
+/*.part3-middle-list li::before {
+    content: "\2714"; /* Unicode value for the check mark symbol (✔) 
+    margin-right: 5px; /* Add space between the tick mark and the list item text 
+}*/
+
+.part3-main-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.part3-tittle h1 {
+    margin: 18px 0;
+    font-size: 40px;
+}
+.part3-middle li{
+    font-family: 'Josefin Sans';
+    font-size: 24px;
+    margin-left: 30px;
+}
+.part3-middle li span{
+    font-size: 20px;
+    color: rgb(255, 0, 0);
+}
+
