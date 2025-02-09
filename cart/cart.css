@@ -1,0 +1,227 @@
+.page {
+    display: flex;
+}
+.page2 {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    background-color: rgb(248, 248, 248);
+    column-gap: 15px;
+}
+
+@media (max-width: 1060px) {
+    .page2 {
+        grid-template-columns: 1fr;
+    }
+    .order-summery {
+        grid-row: 1;
+    }
+}
+.head2-link {
+    text-decoration: none;
+    color: black;
+}
+.no-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60vh;
+    width: 100%;
+    align-items: center;
+}
+.no-item-para {
+    font-size: 25px;
+    font-family: 'Josefin Sans';
+    font-weight: bold;
+    color: green;
+}
+
+.no-item-para span {
+    color: brown;
+    font-size: 32px;
+}
+
+
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    padding: 10px;
+}
+.item-card {    
+    background-color: white;
+    border-radius: 15px;
+    padding: 18px;
+    border: 1px solid rgb(248, 248, 248);
+}
+.delivery-date {
+    font-family: 'Roboto';
+    color: green;
+    font-size: 22px;
+}
+.cart-item-card {
+    min-width: 600px;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+.img-card {
+    height: 150px;
+    width: 150px;
+    margin: 15px;
+}
+.img-card img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.info-card {
+    padding: 15px;
+    font-family: 'Roboto';
+    width: fit-content;
+    max-width: 260px;
+}
+.info-card h1 {
+    font-size: 22px;
+}
+.info-card .price {
+    color: red;
+    font-size: 18px;
+    margin-top: 12px;
+}
+.upd-del-opts {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+.update , 
+.delete {
+    color: rgb(53, 147, 242);
+    cursor: pointer;
+}
+.update:hover , 
+.delete:hover {
+    color: rgb(255, 174, 0);
+    text-decoration: underline;
+}
+
+.order-summery {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.order-summery-card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 15px;
+    font-family: 'Roboto';
+}
+.order-summery-card h1 {
+    color: green;
+    font-size: 22px;
+}
+.items-prices div ,
+.total-price {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    margin: 5px 0;
+}   
+.ord-sum-border {
+    padding-bottom: 8px;
+    border-bottom: 1px solid gray;
+}
+.ord-price {
+    text-align: right;
+}
+.total-amount {
+    padding: 20px 0;
+    margin-top: 15px;
+    border-top: 1px solid gray;
+}
+.total-price {
+    font-size: 20px;
+    color: rgb(190, 47, 47);
+    font-weight: bold;
+}
+
+
+.pay-but-container {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+.pay-but-container button {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 10px;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    background-color: lightgreen;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.pay-but-container button:hover {
+    border: 2px solid lightgreen;
+    background-color: white;
+    color: lightgreen;
+    box-shadow: 0 0 20px lightgreen;
+}
+
+.updating-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0 0 0;
+}
+
+.update-quantity-count {    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.decrement-but ,
+.increment-but {
+    height: 25px;
+    width: 30px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.decrement-but {
+    padding-bottom: 4px;
+}
+.increment-but {
+    padding-top: 3px;
+}
+.update-quantity-count input {
+    height: 25px;
+    width: 40px;
+    font-size: 16px;
+    text-align: center;
+    outline: none;
+    color: rgb(175, 175, 175);
+    border: 1px solid rgb(175, 175, 175);
+}
+.save-updated-quantity-count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.save-updated-quantity-count button {
+    padding: 10px 20px;
+    font-size: 15px;
+    border: 1px solid transparent;
+    background-color: lightgreen;
+    color: white;
+    border-radius: 12px;
+    font-weight: bold;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
