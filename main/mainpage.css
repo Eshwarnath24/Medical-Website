@@ -1,0 +1,374 @@
+* {
+    box-sizing: border-box;
+}
+.page {
+    height: 100vh;
+    font-family: 'Open Sans';
+}
+.coursal {
+    height: 270px;
+    width: 700px;
+    
+}
+.cour-card {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.cour-img {
+    height: 270px;
+    width: 700px;
+    border-radius: 20px;
+}
+.search-img {
+    height: 30px;
+    width: 30px;
+}
+.search-card h1 {
+    font-size: 30px;
+    padding: 4px 0;
+    margin-bottom: 12px;
+}
+.input-search {
+    height: 45px;
+    outline: none;
+    border: 0;
+    font-size: 17px;
+    min-width: 400px;
+}
+.search-box {
+    display: grid;
+    grid-template-columns: 30px 1fr 100px;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 4px 4px 15px;
+    border: 1px solid black;
+    border-radius: 55px;
+    column-gap: 12px;
+}
+.search-box:focus-within {
+    box-shadow: 0 0 30px bisque;
+}
+
+.search-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 8px;
+}
+.search-but {
+    border: 2px solid transparent;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    padding: 8px 18px;
+    border-radius: 50px;
+    font-size: 17px;
+    outline: none;
+    cursor: pointer;
+}
+.search-but-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-but-box .tooltip1 {
+    position: absolute;
+    bottom: -35px;
+    background-color: gray;
+    font-size: 12px;
+    color: white;
+    padding: 3px;
+    border-radius: 3px;
+    opacity: 0;
+}
+.search-but-box:hover .tooltip1 {
+    opacity: 1;
+    transition: opacity 5s;
+}
+
+.main-course-card22 {
+    display: flex; 
+    justify-content: space-evenly;
+    column-gap: 20px;
+}
+
+@media (max-width: 940px) {
+    .main-course-card22 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 12px;
+    }
+    .doctors-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 30px;
+        row-gap: 20px;
+    }
+}
+
+
+.main-course-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.course-card {
+    display: flex;
+    flex-direction: column;
+    width: 130px;
+    border: 1px solid lightgreen;
+    border-radius: 8px;
+    padding: 5px 12px;
+    cursor: pointer;
+    height: 136.6px;
+}
+.course-img {
+    height: 75px;
+}
+.course-img-card {
+    border-bottom: 1px solid black;
+}
+.course-info h3 {
+    font-size: 18px;
+    margin: 0 0 2px 0;
+    text-align: center;
+}
+.course-info p {
+    width: 95px;
+    font-size: 13px;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(255, 149, 0);
+    text-align: center;
+}
+
+.course-card:hover {
+    border: 1px solid transparent;
+    background-color: rgb(172, 241, 172);
+    background-color: rgb(162, 255, 162);
+}
+
+
+
+.main-doctors-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.book-appointment {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.show-appoinments-container {
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 12px;
+}
+.show-appointment-card {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    align-items: center;
+    background-color: rgb(226, 226, 226);
+    border-radius: 10px;
+    font-size: 16px;
+    width: 40vw;
+    min-width: 460px;
+}
+
+.show-appointment-card button {
+    padding: 10px 25px;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    border: 0;
+    font-size: 16px;
+    border-radius: 8px;
+}
+.show-appointment-card button:hover {
+    background-color: rgb(180, 0, 0);
+}
+
+.main-doctors-card h1 {
+    font-size: 24px;
+    text-align: left;
+    margin: 18px 0;
+}
+.doctor-card {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 12px;
+    cursor: pointer;
+}
+.doctor-card:hover {
+    box-shadow: 0 0 20px lightblue;
+}
+
+@media (min-width: 940px) {
+    .doctors-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        column-gap: 30px;
+        row-gap: 20px;
+    }
+}
+
+.centering {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+.centering:focus {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.doctor-card .specialty {
+    font-size: 16px;
+}
+.doctor-card .doctor-img {
+    height: 80px;
+}
+.doctor-card .probs {
+    font-size: 11px;
+    width: 130px;
+    text-align: center;
+    line-height: 12px;
+}
+
+
+
+
+.head-book h1 {
+    font-size: 24px;
+    margin: 18px 0;
+}
+.appoint-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 700px;
+    column-gap: 80px;
+    row-gap: 20px;
+}
+.location-icon {
+    height: 25px;
+}
+.book-design {
+    border: 1px solid black;
+    padding: 4px 15px;
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    border-radius: 8px;
+    margin: 6px 0 0 20px;
+}
+.book-design input {
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+}
+.form-ques {
+    font-size: 13px;
+    font-weight: bold;
+}
+.booking-date ,
+.select-speci {
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 180px;
+    margin: 6px 0 0 20px;
+}
+.book-submit-but {
+    padding: 12px 40px;
+    font-size: 16px;
+    border: 1.5px solid transparent;
+    background-color: rgb(58, 235, 58);
+    color: white;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-weight: bold;
+    margin: 6px 0 0 40px;
+}
+
+.hyperlink-img ,
+.carosal-card {
+    height: 100%;
+    width: 100%;
+}
+.less-symbol {
+    position: absolute;
+    height: 50px;
+    z-index: 49;
+    top: auto;
+    bottom: auto;
+    border-radius: 50%;
+    padding: 10px;
+}
+.grater-symbol {
+    z-index: 49;
+    height: 50px;
+    position: absolute;
+    top: auto;
+    bottom: auto;
+    right: 20px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.img-slider {
+    height: 400px;
+    width: 950px;
+    border-radius: 15px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+    transition: 1s;
+}
+.img-slider .carosal-card {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: 1s;
+}
+
+.carosal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?size=626&ext=jpg&ga=GA1.1.1224184972.1713916800&semt=ais');
+    backdrop-filter: blur(100px);
+    border-radius: 15px;
+    padding: 20px;
+    position: relative;
+}
+
+.carosel-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+

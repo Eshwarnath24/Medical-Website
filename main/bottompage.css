@@ -1,0 +1,113 @@
+.whyname-container h1 ,
+.feedback-head {
+    text-align: left;
+    font-family: Josefin Sans;
+    font-size: 40px;
+    padding: 20px 15vw;
+}
+.why-main-container ,
+.users-feedback-sub-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.why-main-container .why-inner-container {
+    width: 300px;
+}
+.why-sub-container {
+    height: 350px;
+    width: 350px;
+    border: 5px solid rgb(186, 232, 186);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.8s ease-in-out;
+}
+.why-sub-container:hover {
+    background-color: lightgreen;
+    color: white;
+    font-weight: bold;
+    border: 5px solid transparent;
+    box-shadow: 0 10px 100px rgb(98, 241, 98);
+    transition: all 0.8s ease-in-out;
+}
+.why-sub-container:hover img {
+    border-radius: 30px;
+    width: 40%;
+    transition: all 0.8s ease-in-out;
+}
+.why-me-box {
+    height: 300px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 50%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.why-me-box img {
+    width: 60%;
+    border-radius: 20px;
+    transition: all 0.8s ease-in-out;
+}
+.why-me-box h2 {
+    font-size: 20px;
+}
+.why-me-box p {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 1em;
+}
+.feedback-head {
+    margin: 50px 0 0 0;
+}
+.users-feedback-sub-container {
+    padding-top: 100px;
+}
+.users-feedback-sub1-container {
+    border: 2px solid rgb(240, 184, 134);
+    margin: 40px 250px 0 250px;
+    min-height: 150px;
+    max-height: 250px;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 15px 20px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+.users-feedback-sub1-container:hover {
+    box-shadow: 0 -10px 50px 10px rgb(248, 218, 192);
+}
+.users-feedback-sub1-container:hover .user-feedback-img-container img {
+    height: 120px;
+    margin-top: -75px;
+} 
+.user-feedback-img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.user-feedback-img-container img {
+    height: 150px;
+    border-radius: 50%;
+    margin-top: -175px;
+    border-top: 1px solid transparent;
+    box-shadow: 0 -10px 80px 20px rgb(248, 212, 180);
+    transition: all 1s ease-in-out;
+}   
+.user-feedback-para-container {
+    height: 100%;
+    text-align: center;
+}
+.limit-text-to-3-lines {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
