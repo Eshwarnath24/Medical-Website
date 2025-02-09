@@ -1,0 +1,189 @@
+.lab-page {
+    margin: 15px 150px;
+    min-width: 332px;
+}
+.box-lab-test img {
+    height: 80px;
+}
+.box-lab-test {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid lightblue;
+    border-radius: 10px;
+    padding: 10px 5px;
+    font-family: 'Roboto';
+    column-gap: 15px;
+}
+
+
+@media (max-width: 680px) {
+    .lab-page-grid {
+        grid-template-columns: 1fr;
+    }
+}
+@media (min-width: 680px) and (max-width: 1035px) {
+    .lab-page-grid {
+        grid-template-columns: repeat(2 , 1fr);
+    }
+}
+@media (min-width: 1035px) and (max-width: 1300px) {
+    .lab-page-grid {
+        grid-template-columns: repeat(3 , 1fr);
+    }
+}
+@media (min-width: 1300px) {
+    .lab-page-grid {
+        grid-template-columns: repeat(4 , 1fr);
+    }
+}
+
+.lab-page-grid {
+    display: grid;
+    column-gap: 20px;
+    row-gap: 12px;
+}
+.health-checks-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+}
+.health-checks-head h1 ,
+.sub-lab-tests-container h1{
+    font-size: 30px;
+    font-family: 'PT Serif';
+    margin: 30px 15px 15px 15px;
+}
+.health-checks-head button {
+    padding: 10px 30px;
+    font-size: 14px;
+    background-color: white;
+    border: 0;
+    color: orange;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.health-checks-head button:hover {
+    color: darkblue;
+}
+
+.sub-lab-tests-container {
+    margin: 100px 0;
+}
+
+@media (max-width: 870px)  {
+    .sub-lab-tests-grid {
+        grid-template-columns: 1fr
+    }
+}
+
+@media (min-width: 870px) and (max-width: 1150px)  {
+    .sub-lab-tests-grid {
+        grid-template-columns: repeat(2 , 1fr);
+    }
+}
+@media  (min-width: 1150px) and (max-width: 1415px) {
+    .sub-lab-tests-grid {
+        grid-template-columns: repeat(3 , 1fr);
+    }
+}
+@media (min-width: 1415px) {
+    .sub-lab-tests-grid {
+        grid-template-columns: repeat(4 , 1fr);
+    }
+}
+
+.sub-lab-tests-grid {
+    display: grid;
+    column-gap: 20px;
+    row-gap: 15px;
+    transition: all 0.8s ease-in-out;
+}
+.sub-lab-test-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid orange;
+    padding: 10px;
+    border-radius: 8px;
+    transition: all 0.8s ease-in-out;
+}
+.sub-lab-test-card img {
+    height: 70px;
+    transition: all 0.8s ease-in-out;
+}
+.sub-lab-test-card p {
+    font-size: 17px;
+    font-family: 'Roboto';
+    transition: all 0.8s ease-in-out;
+}
+.price-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-top: 20px;
+}
+.price-info p {
+    color: brown;
+    font-weight: bold;
+    font-size: 18px;
+}
+.book-sub-lab {
+    padding: 10px 30px;
+    font-size: 15px;
+    background-color: rgb(211, 244, 255);
+    border-radius: 8px;
+    border: 1px solid transparent;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.book-sub-lab:hover {
+    background-color: rgb(144, 225, 252);
+}
+
+.tooltip-box ,
+.tooltip-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tooltip-card {
+    flex-direction: column;
+    min-width: 500px;
+    background-color: rgb(228, 228, 228);
+    padding: 12px 15px 20px 15px;
+    margin: 5px;
+    border-radius: 15px;
+    font-family: 'Josefin Sans';
+    position: fixed;
+    top: 310px;
+    display: none;
+}
+.tooltip-card.active {
+    display: block;
+}
+.tooltip-card.inactive {
+    display: none;
+}
+.cross-but-card {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+.cross-but-card button {
+    padding: 1px 4px;
+    background-color: transparent;
+    border: 2px solid transparent;
+    color: red;
+    font-weight: bold;   
+    cursor: pointer;
+}
+.cross-but-card button:hover {
+    border: 2px solid red;
+}
+.tooltip-card p {
+    text-align: center;
+}
