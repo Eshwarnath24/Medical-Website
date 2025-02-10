@@ -20,7 +20,7 @@
   - Carousel and other components are implemented in code  
   - The current date is dynamically fetched
  
-- **Things to Do**
+## Things to Do
   - consult application form (should be correctly made)
   - add visibility feture to forgot password
   - make offers , health care, plus web pages
