@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="register.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="page">     
+            <div class="registration-card">
+                <div class="headding">
+                    <h1>New Enrollment</h1>
+                </div>
+
+                <hr style="margin: 10px 5px; border-style: dashed;color: rgb(208, 207, 207);" />
+
+                <form action="" method="">
+                    <div class="change">
+                        <div class="card1">
+                            <div class="name-card">
+                                <p class="card-head">Name</p>
+                                <div class="make-into-row">
+                                    <div>
+                                        <input type="text" class="input-name js-input-name" required>
+                                        <p class="bottom">First Name</p>
+                                    </div>
+                                    <div>
+                                        <input type="text" class="input-name2 js-input-name2" required>
+                                        <p class="bottom">Last Name</p>
+                                    </div>
+                                </div>
+                            </div>
+                
+                            <div class="grid-card1">
+                                <div class="dob">
+                                    <p class="card-head">Date of Birth</p>
+                                    <input type="date" id="js-dob" required>
+                                </div>
+                                <div class="gender">
+                                    <p class="card-head">Gender</p>
+                                    <select class="js-gender-select" required>
+                                        <option value="">--Please select--</option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                        <option value="others">Others</option>
+                                    </select>
+                                </div>
+                                <div class="height">
+                                    <p class="card-head">Height (in cm)</p>
+                                    <input type="number" class="js-get-height" required>
+                                </div>
+                                <div class="weight">
+                                    <p class="card-head">Weight (in kgs)</p>
+                                    <input type="number" class="js-get-weight" required>
+                                </div>
+                                <div class="maratal-status">
+                                    <p class="card-head">Maratal Status</p>
+                                    <select class="js-maratal-status-select" required>
+                                        <option value="">--Please select--</option>
+                                        <option value="male">Yes</option>
+                                        <option value="female">No</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <p class="card-head">Create Password</p>
+                                    <div class="password-card">
+                                        <input type="password" class="js-create-password" placeholder="Password" required>
+                                        <img src="https://pic.onlinewebfonts.com/thumbnails/icons_457197.svg" class="pass-img">
+                                    </div>
+                                </div>
+                                <div>
+                                    <p class="card-head">Conform Password</p>
+                                    <div class="password-card">
+                                        <input type="password" class="js-conform-password" placeholder="Password" required>
+                                        <img src="https://pic.onlinewebfonts.com/thumbnails/icons_457197.svg" class="pass-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <hr style="margin: 20px 8px; border-style: dashed;color: rgb(208, 207, 207);" />
+                
+                        <div class="card2">
+                            <div class="make-into-row">
+                                <div class="contactNum">
+                                    <p>Contact Number:</p>
+                                    <input type="tel" id="js-contact-num"pattern="[0-9]{10}" maxlength="10" required>
+                                </div>
+                                <div class="email">
+                                    <p>E-mail</p>
+                                    <input type="email" id="js-email" required>
+                                    <p class="bottom">example@example.com</p>
+                                </div>
+                            </div>
+                            <div class="adderss-card">
+                                <div class="adderss">
+                                    <p class="card-head">Adderss:</p>
+                                    <div class="address1">
+                                        <input type="text" class="js-address1" required>
+                                        <p class="bottom">Street Adderss</p>
+                                    </div>
+                                </div>
+                                <div class="address2">
+                                    <input type="text" class="js-address2" required>
+                                    <p class="bottom">Street Adderss Line 2</p>
+                                </div>
+                                <div class="city-state">
+                                    <div class="city">
+                                        <p class="card-head">City</p>
+                                        <select class="js-city-select" required>
+                                            <option value="">--Please select--</option>
+                                            <option value="hyd">Hyderabad</option>
+                                            <option value="kol">Kolkata</option>
+                                            <option value="coim">Coimbatour</option>
+                                            <option value="chen">Chennai</option>
+                                        </select>
+                                    </div>
+                                    <div class="state">
+                                        <p class="card-head">State</p>
+                                        <select class="js-state-select" required>
+                                            <option value="">--Please select--</option>
+                                            <option value="ts">Telangana</option>
+                                            <option value="ap">Andhra Pradesh</option>
+                                            <option value="tn">Tamil Nadu</option>
+                                            <option value="wb">West Bengal</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="pin-code">
+                                    <input type="number" pattern="0-9{6}" class="js-pin-code" required>
+                                    <p class="bottom">Pin Code</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="submit-but">
+                        <input type="submit" value="Register" class="js-register">
+                    </div>
+                </form>
+                   
+
+            </div>
+            
+
+        </div>
+        <script type="module" src="register.js"></script>
+    </body>
+</html>
