@@ -1,0 +1,113 @@
+.medicins-page {
+    font-family: 'Roboto';
+}
+
+.store-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+/* @media (min-width: 1300px) {
+    .store-grid {
+        display: grid;
+        grid-template-columns: repeat(6 , 1fr);
+    }
+}
+@media (min-width: 1150px) and (max-width: 1300px) {
+    .store-grid {
+        display: grid;
+        grid-template-columns: repeat(5 , 1fr);
+    }
+}
+@media (min-width: 900px) and (max-width:1150px) {
+    .store-grid {
+        display: grid;
+        grid-template-columns: repeat(4 , 1fr);
+    }
+}
+
+@media (min-width: 670px) and (max-width:900px) {
+    .store-grid {
+        display: grid;
+        grid-template-columns: repeat(3 , 1fr);
+    }
+}
+
+@media (min-width: 400px) and (max-width:670px) {
+    .store-grid {
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+    }
+}
+@media (min-width: 150px) and (max-width:400px) {
+    .store-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+} */
+
+
+
+
+
+.product-img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 18px 25px;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+.product-name {
+    height: 50px;
+    overflow: hidden;
+    padding: 3px;
+    font-size: 16px;
+}
+.get-product-quantity {
+    background-color: rgb(222, 222, 222);
+    border-radius: 5px;
+    height: 25px;
+    padding: 2px 4px;
+    margin-bottom: 8px;
+    border: 1px solid rgb(168, 168, 168);
+}
+.product-img-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+}
+.product-cost {
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 17px;
+}
+.add-product2cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.add-to-cart-but {
+    background-color: rgb(5, 125, 185);
+    color: white;
+    font-size: 16px;
+    width: 100%;
+    padding: 12px 10px;
+    border-radius: 80px;
+    border: 1px solid transparent;
+}
+.limit-text-to-2-lines {
+    display: -webkit-box;  /* Required for WebKit browsers */
+    display: box;          /* Future standard (not widely supported) */
+    -webkit-line-clamp: 2; /* WebKit-specific line clamping */
+    line-clamp: 2;         /* Standard property (not widely supported yet) */
+    -webkit-box-orient: vertical; /* Defines vertical layout */
+    box-orient: vertical;  /* Standard property (not widely supported) */
+    overflow: hidden;      /* Ensures overflow is hidden */
+}
