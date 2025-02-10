@@ -1,0 +1,110 @@
+.atm-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 100vh;
+}
+.atm-card-dup-container {
+    height: 70vh;
+    min-width: 20vw;
+}
+
+
+
+.atm-card-main-dup {
+    border: 1px solid rgb(234, 234, 234);
+    border-radius: 12px;
+    padding: 30px 15px;
+    height: 40vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: -20vh;
+    width: 15vw;
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/034/371/414/small_2x/abstract-grey-and-white-professional-motion-background-corporate-business-background-free-video.jpg');
+    background-size: cover;
+    font-family: 'Roboto';
+    box-shadow: 0 30px 80px 20px rgb(188, 188, 188);
+    transition: all 0.5s ease-in-out;
+}
+.atm-card-user-name {
+font-size: 17px;
+}
+.atm-card-user-cardNum {
+    font-size: 14px;
+}
+.sim-tap-symbol-cont ,
+.date-company ,
+.order-num-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product-order-info {
+    width: 18vw;
+}
+.order-num-container {
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+.order-num-container p {
+    font-family: 'Playwrite IT Moderna';
+}
+.sim-tap-symbol-cont img {
+    height: 35px;
+}
+.atm-card-company-logo {
+    height: 40px;
+}
+.atm-card-company-logo img {
+    max-height: 100%;
+}
+.date-company {
+    margin-top: 20px;
+}
+.atm-card-and-order-container {
+    border: 2px solid transparent;
+    background-color: rgb(232, 249, 255);
+    border-radius: 20px;
+    padding: 20px;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.make-line {
+    border-top: 2px dashed rgb(195, 195, 195);
+    margin: 0 10px;
+}
+.amount-container {
+    border: 2px solid transparent;
+    background-color: rgb(232, 249, 255);   
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+.amount-mini-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin: 15px 0;
+    width: 14vw;
+}
+.amount-mini-container h1 {
+    font-size: 18px;
+    font-family: 'Roboto';
+}
+.amount-mini-container p {
+    color: green;
+    font-weight: bold;
+    font-family: 'Playwrite IT Moderna';
+}
+.bill-logo-container {
+    height: 100px;
+    padding: 20px;
+}
+.bill-logo-container img {
+    max-height: 100%;
+}

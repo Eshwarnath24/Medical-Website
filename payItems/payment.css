@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input {
+    outline: none;
+    border-radius: 10px;
+    border: 0;
+    background-color: rgb(241, 241, 241);
+}
+.main-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2em;
+}
+.page {
+    min-width: 1000px;
+    font-family: 'Roboto';
+    border: 2px solid rgb(75, 182, 224);
+    padding: 30px;
+    background-color: white;
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out;
+}
+.page:focus-within {
+    box-shadow: 0 10px 50px 10px rgb(166, 221, 243);
+}
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.heading {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+.heading .logo-img{
+    height: 80px;
+}
+.make-time {
+    display: flex;
+    align-items: center;
+    column-gap: 3px;
+}
+.make-time .time-card {
+    height: 40px;
+    width: 35px;
+    background-color: rgb(71, 188, 234);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+.middle-page {
+    margin: 20px 0;
+}
+.card-edit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-card h1 ,
+.cvv-heading h1 ,
+.expiry-date-heading h1 ,
+.card-user-name-heading h1 {
+    font-weight: bold;
+    font-size: 22px;
+}
+.about-card p ,
+.cvv-heading p ,
+.expiry-date-heading p ,
+.card-user-name-heading p {
+    font-size: 14px;
+    color: rgb(148, 148, 148);
+}
+.edit-img-name {
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    color: rgb(61, 183, 232);
+    cursor: pointer;
+}
+.edit-img-name img {
+    height: 15px;
+    width: 20px;
+}
+.card-details-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: 6px 5px 6px 25px;
+    margin: 10px 5px;
+    border-radius: 10px;
+}
+.mini-card-details {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+.mini-card-details img {
+    height: 40px;
+}
+.mini-card-details input {
+    width: 80px;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px 3px;
+}
+.verified-loading img {
+    height: 50px;
+}
+.cvv-number ,
+.expiry-date ,
+.card-user-name {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    align-items: center;
+    margin: 10px 0;
+}
+.input-cvv ,
+.input-expiry-data ,
+.input-card-user-name ,
+.pay-now {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+}
+.input-cvv input {
+    font-size: 20px;
+    padding: 10px 30px;
+    text-align: center;
+}
+.input-expiry-data {
+    column-gap: 12px;
+}
+.input-expiry-data input {
+    width: 80px;
+    padding: 15px 10px;
+    text-align: center;
+    font-size: 18px;
+}
+.input-card-user-name input {
+    padding: 15px 10px;
+    min-width: 250px;
+    text-align: center;
+    font-size: 18px;
+}
+.pay-now {
+    margin: 25px 0 0 0;
+    column-gap: 15px;
+}
+.pay-now-but {
+    padding: 15px 50px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(61, 183, 232);
+    border: 2px solid transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.pay-now-but:hover {
+    color: rgb(61, 183, 232);
+    background-color: white;
+    border: 2px solid rgb(166, 221, 243); 
+}
+.about-amount {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.about-amount h1 {
+    color: green;
+    font-size: 24px;
+}
+.about-amount p {
+    color: brown;
+    font-weight: bold;
+    font-size: 24px;
+}
+.back-to-cart-hyperlink button {
+    padding: 15px 50px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(61, 183, 232);
+    background-color: white;
+    border: 2px solid rgb(166, 221, 243);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.back-to-cart-hyperlink button:hover {
+    color: white;
+    background-color: rgb(61, 183, 232);
+    border: 2px solid transparent;
+}
+.toogle-say-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 35px;
+    left: 40vw;
+    right: 40vw;
+    display: none;
+    transition: display 1s ease-in;
+}
+.toogle-say-container.active {
+    display: flex;
+}
+.toogle-say {
+    background-color: rgb(212, 212, 212);
+    padding: 15px 30px;
+    width: 300px;
+    font-size: 10px;
+    font-family: 'Roboto';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="payment.css">
+        <link rel="stylesheet" href="atmCard.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="toogle-say-container">
+            <div class="toogle-say">
+                <h1>Payment Successful!!</h1>
+            </div>
+        </div>
+        <div class="main-page">
+            <div class="page">
+                <div class="left">
+                    <div class="top">
+                        <div class="heading">
+                            <img src="../Datas/logo2.svg" class="logo-img" />
+                        </div>
+                        <div class="time">
+                            <div class="make-time">
+                                <div class="time-card js-time-card1">1</div>
+                                <div class="time-card js-time-card2">0</div>
+                                <div style="font-size: 30px;margin-bottom: 5px;">:</div>
+                                <div class="time-card js-time-card3">3</div>
+                                <div class="time-card js-time-card4">9</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="middle-page">
+                        <div class="card-edit">
+                            <div class="about-card">
+                                <h1>Card Number</h1>
+                                <p>Enter 16 digits card number</p>
+                            </div>
+                            <div class="edit">
+                                <p class="edit-img-name js-edit-img-name">
+                                    <img src="https://pic.onlinewebfonts.com/thumbnails/icons_564931.svg" alt="">
+                                    Edit
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="card-details">
+                            <div class="card-details-box">
+                                <div class="mini-card-details">
+                                    <img src="https://cdn.vox-cdn.com/thumbor/K5wnjGtVsJrnM5x4vF7b0IrWUbo=/0x0:1000x1000/920x613/filters:focal(421x430:581x590):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/62800797/Mastercard_logo.0.jpg" />
+                                    <input type="text" class="js-input-card-num1" pattern="[0-9]{10}" maxlength="4" value="1234" disabled/>
+                                    <div>&#x2022;</div>
+                                    <input type="text" class="js-input-card-num2" pattern="[0-9]{10}" maxlength="4" value="1234" disabled/>
+                                    <div>&#x2022;</div>
+                                    <input type="text" class="js-input-card-num3" pattern="[0-9]{10}" maxlength="4" value="1234" disabled/>
+                                    <div>&#x2022;</div>
+                                    <input type="text" class="js-input-card-num4" pattern="[0-9]{10}" maxlength="4" value="1234" disabled/>
+                                </div>
+                                <div class="verified-loading">
+                                    <img src="https://i.pinimg.com/originals/4e/8c/91/4e8c9197c64747175890b4f8cd740bb7.gif" class="js-loding-gif"/>
+                                </div>
+                            </div>
+                            <div class="cvv-number">
+                                <div class="cvv-heading">
+                                    <h1>CVV Number</h1>
+                                    <p>Enter 3 digit number given on the card</p>
+                                </div>
+                                <div class="input-cvv">
+                                    <input type="text" class="js-input-cvv-num" pattern="[0-9]{10}" maxlength="3" value="123" disabled/>
+                                </div>
+                            </div>
+                            <div class="expiry-date">
+                                <div class="expiry-date-heading">
+                                    <h1>Expiry Date</h1>
+                                    <p>Enter expiry date given on the card</p>
+                                </div>
+                                <div class="input-expiry-data">
+                                    <input type="text" class="js-input-data-date" pattern="[0-9]{10}" maxlength="2" value="12" disabled/>
+                                    <div style="font-size: 40px;font-weight: 300;">/</div>
+                                    <input type="text" class="js-input-data-month" pattern="[0-9]{10}" maxlength="2" value="28" disabled/>
+                                </div>
+                            </div>
+                            <div class="card-user-name">
+                                <div class="card-user-name-heading">
+                                    <h1>Enter Name</h1>
+                                    <p>Enter name given on the card</p>
+                                </div>
+                                <div class="input-card-user-name">
+                                    <input type="text" class="js-input-card-user-name" value="G Eshwarnath" disabled/>
+                                </div>
+                            </div>
+    
+                            <div class="pay-now">
+                                <a href="" class="back-to-cart-hyperlink js-back-to-cart-hyperlink">
+                                    <button >Back to Cart</button>
+                                </a>
+                                
+                                <button class="pay-now-but js-pay-now-but">Pay Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="atm-card-container">
+                <div class="set-width">
+                    <div class="atm-card-dup-container">
+                        <div class="atm-card-and-order-container">
+                            <div class="atm-card-main-dup">
+                                <div class="sim-tap-symbol-cont">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/6404/6404078.png" alt="">
+                                    <img src="https://www.shutterstock.com/image-vector/vector-icon-contactless-payment-system-600nw-1067474234.jpg" alt="">
+                                </div>
+                                <div class="remaing-card">
+                                    <div class="name-cardNum">
+                                        <p class="atm-card-user-name js-atm-card-user-name">G Eshwarnath</p>
+                                        <p class="atm-card-user-cardNum">
+                                            &#x2022;&#x2022;&#x2022;&#x2022;
+                                            &#x2022;&#x2022;&#x2022;&#x2022;
+                                            &#x2022;&#x2022;&#x2022;&#x2022;
+                                            <span class="js-atm-card-last-numbers"></span>
+                                        </p>
+                                    </div>
+                                    <div class="date-company">
+                                        <div>
+                                            <span class="js-card-date"></span> / <span class="js-card-month"></span> 
+                                        </div>
+                                        <div class="atm-card-company-logo">
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/1280px-Mastercard-logo.svg.png" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-order-info">
+                                <div class="order-num-container">
+                                    <p style="font-weight: bold;">Order Number: </p>
+                                    <p class="js-order-number"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="make-line"></div>
+                        <div class="amount-container">
+                            <div>
+                                <div class="amount-mini-container">
+                                    <h1>Amount: </h1>
+                                    <p class="js-fill-price"> </p>
+                                </div>
+                            </div>
+                            <div class="bill-logo-container">
+                                <img src="https://www.pngmart.com/files/7/Bill-PNG-Transparent-Image.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script type="module" src="payment.js"></script>
+        <script src="https://unpkg.com/dayjs@1.11.10/dayjs.min.js"></script>
+    </body>
+</html>
