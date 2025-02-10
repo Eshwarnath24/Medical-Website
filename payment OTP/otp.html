@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="otp.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        
+        <div class="success-confirm-page">
+            <div class="success-container">
+                <div class="tick-container">
+                    <div class="tick-symbol">&#10003;</div>
+                </div>
+                <div>
+                    <p class="success-info">Payment Successfull !!!</p>
+                    <a href="../main/appScreenPage.html" class="success-ok-but-container">
+                        <button class="success-ok-but">OK</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="failled-confirm-page">
+            <div class="failled-container">
+                <div class="cross-container">
+                    <div class="cross-symbol">X</div>
+                </div>
+                <div>
+                    <p class="failled-info">Payment Failled !!!</p>
+                    <a href="../main/appScreenPage.html" class="failled-ok-but-container">
+                        <button class="failled-ok-but">OK</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="main-page">
+            <div class="page">
+                <div class="img-container">
+                    <img src="https://tehran-assets.s3.amazonaws.com/static/why-image.png" />
+                </div>
+                <div class="otp-main-page">
+                    <h1>OTP Verification</h1>
+                    <div>
+                        <p class="otp-main-info">
+                            OTP is sent to 
+                            <span class="js-user-mail-id">ga*********13@gmail.com</span>.
+                        </p>
+                    </div>
+                    <div class="otp-page">
+                        <p>Enter OTP to procede Payment</p>
+                        <div class="otp-layout">
+                            <input type="text" class="js-otp-number1" pattern="[0-9]{1}" maxlength="1" />
+                            <input type="text" class="js-otp-number2" pattern="[0-9]{1}" maxlength="1" />
+                            <input type="text" class="js-otp-number3" pattern="[0-9]{1}" maxlength="1" />
+                            <input type="text" class="js-otp-number4" pattern="[0-9]{1}" maxlength="1" />
+                        </div>
+                        <div class="alert-and-resend-container">
+                            <div class="warning-container">
+                                <div class="warning-logo">!</div>
+                                Wait for 
+                                <span class="js-seconds-count"> 60</span> Seconds
+                            </div>
+                            <div class="resend-hyperlink js-resend-hyperlink">
+                                Resend?
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cancel-and-ok-but-container">
+                        <button class="cancel-but js-cancel-but">Cancel</button>
+                        <button class="payment-ok-but js-payment-ok-but">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <script type="module" src="otp.js"></script>
+    </body>
+</html>

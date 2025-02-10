@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Reddit Sans';
+}
+
+.main-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+.img-container {
+    width: 40vw;
+}
+.img-container img {
+    max-width: 100%;
+}
+.otp-main-page {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    max-width: 500px;
+}
+.otp-main-page h1 {
+    font-size: 40px;
+}
+.otp-main-info {
+    max-width: 300px;
+    font-size: 14px;
+}
+.otp-main-info span {
+    color: rgb(83, 186, 255);
+    font-size: 16px;
+}
+.otp-page p {
+    font-size: 17px;
+    text-align: center;
+    margin: 5px 0 10px 0;
+}
+.otp-layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 15px;
+}
+.otp-layout input {
+    height: 45px;
+    width: 45px;
+    border: 3px solid rgb(220, 220, 220);
+    border-radius: 5px;
+    text-align: center;
+    font-size: 24px;
+    outline: none;
+    color: dodgerblue;
+    font-weight: bold;
+    font-family: 'Tilt Neon';
+}
+.otp-layout input:focus-within {
+    border-color: dodgerblue;
+}
+.alert-and-resend-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    margin: 15px 0 0 0;
+}
+.warning-container {
+    display: flex;
+    align-items: center;
+    column-gap: 2px;
+    color: rgb(157, 157, 157);
+    display: none;
+}
+.warning-container.active {
+    display: flex;
+}
+.warning-logo {
+    background-color: yellow;
+    height: 22px;
+    width: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-weight: bolder;
+    color: black;
+    font-size: 18px;
+    border: 2px solid black;
+    margin-right: 5px;
+}
+.resend-hyperlink {
+    color: rgb(0, 123, 255);
+    font-weight: 600;
+    margin-left: auto;
+    cursor: pointer;
+}
+.resend-hyperlink.active {
+    pointer-events: none;
+}
+
+.resend-hyperlink:hover ,
+.resend-hyperlink:active {
+    color: rgb(0, 191, 255);
+    text-decoration: underline;
+    cursor: pointer;
+}
+.cancel-and-ok-but-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+}
+.cancel-and-ok-but-container button {
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.4s
+}
+.cancel-but {
+    border: 1px solid red;
+    color: red;
+    background-color: white;
+}
+.cancel-but:hover {
+    border: 1px solid white;
+    color: white;
+    background-color: red;
+}
+.payment-ok-but {
+    border: 1px solid transparent;
+    color: white;
+    background-color: lightgreen;
+}
+.payment-ok-but:hover {
+    border: 1px solid lightgreen;
+    color: lightgreen;
+    background-color: white;
+}
+
+
+.success-confirm-page ,
+.failled-confirm-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    background-color: rgba(173, 173, 173, 0.263);
+    display: none;
+}
+.success-confirm-page.active ,
+.failled-confirm-page.active {
+    display: flex;
+}
+.success-container ,
+.failled-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: center;
+    border: 5px solid lightgreen;
+    border-radius: 10px;
+    min-width: 550px;
+    height: 220px;
+    padding: 12px;
+    background-color: white;
+}
+.failled-container {
+    border-color: red;
+}
+.tick-container {
+    border: 3px solid rgb(39 , 217, 53);
+    padding: 3px;
+    border-radius: 50%;
+    margin-top: -50px;
+    background-color: white;
+}
+.cross-container {
+    border: 3px solid red;
+    padding: 3px;
+    border-radius: 50%;
+    margin-top: -50px;
+    background-color: white;
+
+}
+.tick-symbol {
+    color: white;
+    background-color: rgb(39 , 217, 53);
+    font-size: 55px;
+    font-weight: bold;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.cross-symbol {
+    color: white;
+    background-color: red;
+    font-size: 55px;
+    font-weight: bold;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+.success-info ,
+.failled-info {
+    font-size: 24px;
+    margin: 30px 0 20px 0;
+}
+.success-ok-but-container ,
+.failled-ok-but-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+.success-ok-but-container button ,
+.failled-ok-but-container button {
+    padding: 15px 40px;
+    font-size: 18px;
+    color: white;
+    background-color: lightgreen;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.success-ok-but-container button:hover ,
+.failled-ok-but-container button:hover {
+    color: lightgreen;
+    background-color: white;
+    border: 2px solid lightgreen;
+}
+.failled-ok-but-container button {
+    background-color: red;
+}
+.failled-ok-but-container button:hover {
+    color: red;
+    border-color: red;
+}
