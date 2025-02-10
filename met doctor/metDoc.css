@@ -1,0 +1,149 @@
+.doctor-filter ,
+.doctor-filter form ,
+.doctor-filter form div {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+.doctor-filter form div {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.doctor-filter {
+    background-color: rgb(222, 247, 255);
+    padding: 10px;
+    font-size: 17px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.male-doc ,
+.female-doc {
+    height: 20px;
+    width: 20px;
+}
+
+
+.doctor-grid {
+    padding: 20px;
+}
+.main-doctor-grid {
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    column-gap: 15px;
+    row-gap: 15px;
+}
+
+@media (max-width: 1020px) {
+    .main-doctor-grid {
+        grid-template-columns: repeat(2 , 1fr);
+    }
+}
+@media (max-width: 700px) {
+    .main-doctor-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+.doctor-grid {
+    max-width: 1300px;
+    margin: auto;
+    font-family: 'Roboto';
+}
+.doc-card {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    column-gap: 25px;
+}
+.doc-info {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+.doc-price {
+    font-size: 18px;
+    font-weight: bold;
+}
+.doc-price span {
+    color: brown;
+}
+.doc-language img {
+    height: 15px;
+}
+.doc-language {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+.doc-info p {
+    color: rgb(0, 110, 255);
+    margin-left: 10px;
+    font-size: 13.5px;
+}
+#doc-name {
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    margin: 0;
+}
+.main-doc-card {
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 12px;
+}
+.main-doc-card:hover {
+    box-shadow: 0 0 20px lightgray;
+    transition: box-shadow 0.25s ease-in-out;
+}
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 12px;
+    column-gap: 12px;
+}
+.buttons .digital {
+    padding: 10px 0;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    background-color: lightgreen;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+}
+.buttons .digital:hover {
+    border: 1px solid lightgreen;
+    background-color: white;
+    color: lightgreen;
+}
+
+.buttons .hospital {
+    padding: 10px 0;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    background-color: rgb(102, 217, 255);
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+}
+.buttons .hospital:hover {
+    border: 1px solid rgb(102, 217, 255);
+    background-color: white;
+    color: rgb(102, 217, 255);
+}
+
+.doc-img {
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 50%;
+}
+.limit-text-to-2-lines {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
