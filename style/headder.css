@@ -1,0 +1,227 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    padding-top: 100px;
+}
+.headder {
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(240, 240, 240);
+    background-color: white;
+    z-index: 50;
+}
+.page {
+    position: relative;
+    z-index: 49;
+
+}
+.profile-container {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 200;
+    background-color: rgba(0, 0, 0, 0.551);
+    font-family: 'Josefin Sans';
+    display: none;
+}
+
+.profile-container.active {
+    display: block;
+}
+.profile-inner-container {
+    display: flex;
+    align-items: center;
+    column-gap: 0.2em;
+    font-size: 18px;
+    font-family: 'Josefin Sans';
+    cursor: pointer;
+}
+.profile-box {
+    position: absolute;
+    right: 20px;
+    top: 80px;
+}
+.profile-card {
+    background-color: rgb(255, 255, 255);
+    width: 350px;
+    padding: 20px;
+}
+.set-profile-img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 1px solid rgb(220, 220, 220);
+    padding: 2px;
+}
+
+
+.head-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 300px;
+}
+.logo img {
+    height: 70px;
+}
+.address {
+    width: 150px;
+}
+.address1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.address2 select {
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    margin-left: 20px;
+}
+
+.head-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 600px;
+}
+.down-app ,
+.offers ,
+.cart ,
+.profile {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.down-app img ,
+.offers img ,
+.cart img {
+    height: 30px;
+    width: 30px;
+}
+.profile-img {
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.offers ,
+.cart {
+    padding: 8px;
+    border: 1px solid rgb(231, 231, 231);
+    border-radius: 8px;
+    width: 100px;
+    column-gap: 8px;
+    cursor: pointer;
+}
+.offers:hover ,
+.cart:hover {
+    background-color: rgb(237, 237, 237);
+}
+.down-app {
+    padding: 8px;
+    border-radius: 8px;
+    border: 0;
+    background-color: rgba(0, 221, 255, 0.1);
+    cursor: pointer;
+}
+.down-app:hover {
+    background-color: rgba(0, 221, 255, 0.2);
+}
+.profile {
+    flex-direction: column;
+}
+.down-app .tooltip ,
+.offers .tooltip ,
+.cart .tooltip ,
+.profile .tooltip {
+    position: absolute;
+    bottom: -37px;
+    background-color: gray;
+    color: white;
+    padding: 8px;
+    font-size: 12px;
+    border-radius: 4px;
+    opacity: 0;
+    pointer-events: none;
+}
+.down-app .tooltip ,
+.offers .tooltip ,
+.cart .tooltip {
+    left: 28px;
+}
+.down-app:hover .tooltip ,
+.offers:hover .tooltip ,
+.cart:hover .tooltip ,
+.profile:hover .tooltip {
+    transition: opacity 2s ease-in;
+    opacity: 1;
+}
+
+
+.x-but {
+    display: flex;
+    justify-content: end;
+}
+.x-but button {
+    padding: 2px 4px;
+    border: 1.6px solid transparent;
+    background-color: white;
+    cursor: pointer;
+}
+.x-but button:hover {
+    background-color: red;
+    color: white;
+    border: 1.6px solid rgb(55, 55, 55);
+}
+.user-card {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 30px 12px 15px;
+    font-size: 16px;
+}
+.make-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.make-row img {
+    height: 23px;
+    width: 23px;
+}
+.user-info-profile img {
+    height: 60px;
+}
+
+.user-info-profile {
+    display: flex;
+    align-items: center;
+    margin: 12px 0;
+    color: black;
+    text-decoration: none;
+    column-gap: 20px;
+}
+.user-profile-card {
+    margin: 0 0 50px 0;
+}
+
