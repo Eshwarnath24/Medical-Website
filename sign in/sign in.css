@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    background-image: url('https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjg3MC1teW50LTIwXzFfMi5qcGc.jpg');
+    font-family: Roboto;
+}
+
+.headder {
+    height: 70px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.page {
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    border: solid 1px rgb(215, 214, 214);
+    box-shadow: 10px 0 100px rgb(35, 248, 245);
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px 8px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    min-width: 500px;
+    align-items: center;
+    padding: 20px 40px 40px 40px;
+    border-left: solid 1px rgb(188, 187, 187);
+}
+
+
+@media (max-width: 950px) {
+    body {
+        height: 1000px;
+    }
+    .page {
+        grid-template-columns: 1fr;
+        padding: 5px 25px;
+    }
+    .main {
+        border-top: 1px solid rgb(216, 216, 216);
+        border-left: 0;
+    }
+    .doctor-img1{
+        margin-bottom: -40px;
+    }
+    .doctor-img3 {
+        margin-top: -40px;
+    }
+}
+
+
+
+.user-card ,
+.password-card{
+    display: flex;
+    padding: 5px 10px;
+    border-radius: 50px;
+    width: 70%;
+    border: 1px solid rgb(205, 203, 203);
+    align-items: center;
+    color: white;
+    padding: 7px;
+}
+
+.user-card input ,
+.password-card input {
+    border: 0;
+    outline: none;
+    margin: 10px 5px 0 15px;
+    padding-bottom: 10px;
+    width: 100%;
+    font-size: 15px;
+    background: none;
+}
+
+.password-card input::placeholder ,
+.user-card input::placeholder {
+    color: black;
+}
+
+.user-card input:focus ,
+.password-card input:focus {
+    border-bottom: solid 1px gray;
+}
+
+.user-img ,
+.pass-img {
+    height: 30px;
+    background: none;
+    cursor: pointer;
+}
+
+.doctor-img1 ,
+.doctor-img2 ,
+.doctor-img3 {
+    width: 150px;
+} 
+.doctor-img3 {
+    width: 200px;
+} 
+
+.login-head {
+    border-bottom: solid 1px rgb(202, 200, 200);
+    width: 200px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.box-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.card-2 {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.forgot {
+    text-decoration: none;
+}
+.forgot:hover {
+    text-decoration: underline;
+}
+
+.login-but {
+    padding: 10px 15px;
+    width: 100px;
+    background-color: rgb(51, 249, 160);
+    color: white;
+    font-size: 15px;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.in-buttons-link {
+    margin-top: 10px;
+    height: 40px;
+    text-decoration: none;
+}
+
+.login-but:hover {
+    color: rgb(51, 249, 160);
+    background-color: white;
+    font-size: 15px;
+    border: 2px solid rgb(51, 249, 160);
+    font-weight: bold;
+    transition: border 0.3s ease;
+}
+
+.register-link {
+    text-decoration: none;
+}
+.register-link:hover {
+    text-decoration: underline;
+}
+
+.button-card.active .button {
+    opacity: 0;
+    background-color: aqua;
+}
