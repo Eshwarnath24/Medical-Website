@@ -18,7 +18,7 @@ let generatedOTP;
 
 let getOTP = document.querySelector('.js-get-otp');
 if (getOTP) {
-    getOTP.addEventListener('click' , () => {
+    getOTP.addEventListener('click' , (event) => {
 
         let phoneNum = document.querySelector('.input-phone-num').value;
         let optCode = `
@@ -48,13 +48,27 @@ if (getOTP) {
                             </div>
                         </div>
                     `
-    
+        let changeingUserData = null;
         if (phoneNum.length === 10) {
             let getOTPAccess = checkNumber(phoneNum);
             if (getOTPAccess) {
-                document.querySelector('.js-changing-card').innerHTML = optCode;
-                generatedOTP = generateOTP(); 
-                console.log(generatedOTP);
+                let userFound = false;
+                userDatas.forEach((Data) => {
+                    if (Data.contactNumber == phoneNum) {
+                        userFound = true;
+                        changeingUserData = Data;
+                    }
+                });
+                if (userFound) {
+                    document.querySelector('.js-changing-card').innerHTML = optCode;
+                    generatedOTP = generateOTP(); 
+                    console.log(generatedOTP);
+                } else {
+                    alert(`This PhoneNumber havn't registered`);
+                    event.preventDefault();
+                    window.location.href = '../registration/register.html';
+                }
+                
             } else {
                 alert('Check your Phone number');
                 console.log('here');
@@ -79,30 +93,23 @@ if (getOTP) {
                     if (updateNewPassword) {
                         updateNewPassword.addEventListener('click' , (event) => {
                             let newPass = document.querySelector('.con-new-password').value;
-            
-                            let matchedData;
-                            userDatas.forEach((updatingData) => {
-                                if (updatingData.contactNumber === phoneNum) {
-                                    matchedData = updatingData;
-                                    if (updatingData.conformPassword === newPass) {
-                                        alert(`You must enter New Password`);
-                                    } else {
-                                        matchedData.conformPassword = newPass;
-                                        matchedData.createPassword = newPass;
+                            changeingUserData
+                            
+                            if (changeingUserData.conformPassword === newPass) {
+                                alert(`You must enter New Password`);
+                                document.querySelector('.con-new-password').value = '';
+                                document.querySelector('.c-newpassword').value = '';
+                            } else {
+                                changeingUserData.conformPassword = newPass;
+                                changeingUserData.createPassword = newPass;
 
-                                        updateUsers();
+                                updateUsers();
 
-                                        event.preventDefault();
-                                        window.location.href = '../sign in/sign in .html';
-                                    }
-                                }
-                            });
-            
-                            if (!matchedData) {
-                                alert(`You haven't registered`);
+                                event.preventDefault();
+                                window.location.href = '../sign in/sign in .html';
                             }
             
-                            console.log(updatingDatas);
+                            console.log(changeingUserData);
                         });
                     }
                     
@@ -200,69 +207,3 @@ function makeNewPassword () {
             </div>
     `;
 }
-
-
-
-
-
-/*document.body.addEventListener ('keydown' , (event) => {
-    console.log(event.key);
-    if (event.key === 'Enter') {
-        testingBro();
-    }
-});
-
-
-
-
-
-
-function testingBro () {
-    let phoneNum = document.querySelector('.input-phone-num').value;
-    let optCode = `
-                <div class="otp-card">
-                    <div class="otp-main-card">
-                        <p>
-                            Enter the OTP sent to 
-                            <span>+91 ${phoneNum}</span>
-                        </p>
-                        <div class="otp-digit6">
-                            <input type="text" class="digit1-otp" maxlength="1">
-                            <input type="text" class="digit2-otp" maxlength="1">
-                            <input type="text" class="digit3-otp" maxlength="1">
-                            <input type="text" class="digit4-otp" maxlength="1">
-                            <input type="text" class="digit5-otp" maxlength="1">
-                            <input type="text" class="digit6-otp" maxlength="1">
-                        </div>
-                    </div>
-                    <div class="opt-error">
-                        <p>
-                            Didn't resive any OTP?
-                            <a href="#" class="otp-error-hyperlink">Resend code</a>
-                        </p>
-                    </div>
-                    <div class="verify-but-card">
-                        <button class="js-verify-but js-verify-but1">Verify</button>
-                    </div>
-                </div>
-                `
-    if (phoneNum.length === 10) {
-        let getOTPAccess = checkNumber(phoneNum);
-        if (getOTPAccess) {
-            document.querySelector('.js-changing-card').innerHTML = optCode;
-            generatedOTP = generateOTP(); 
-            console.log(generatedOTP);
-        } else {
-            alert('Check your Phone number');
-            console.log('here');
-        }
-        
-    } else {
-        alert('Check your Phone number');
-        console.log(phoneNum);
-        for (let a of phoneNum) {
-            console.log(a);
-        }
-    }
-}
-*/
