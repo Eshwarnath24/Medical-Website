@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/App%20info/appInfo.html",
+      "permanent": false
+    }
+  ]
+}
